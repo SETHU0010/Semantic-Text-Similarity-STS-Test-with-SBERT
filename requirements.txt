@@ -5,3 +5,5 @@ inflect
 nltk
 torch
 xlsxwriter
+openpyxl
+torch
