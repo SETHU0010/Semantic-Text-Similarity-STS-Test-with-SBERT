@@ -3,7 +3,3 @@ pandas
 sentence-transformers
 inflect
 nltk
-torch
-xlsxwriter
-openpyxl
-torch
