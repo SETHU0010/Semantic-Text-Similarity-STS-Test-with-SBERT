@@ -5,8 +5,15 @@ from io import BytesIO
 import inflect
 import logging
 import re
+import nltk  # Import nltk here
 from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer
+
+# Download stopwords if not found
+try:
+    nltk.data.find("corpora/stopwords")
+except LookupError:
+    nltk.download("stopwords")
 
 # Set up logging for error tracking
 logging.basicConfig(level=logging.ERROR)
