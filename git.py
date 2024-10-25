@@ -9,11 +9,16 @@ import nltk  # Import nltk here
 from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer
 
-# Download stopwords if not found
+# Download stopwords and wordnet if not found
 try:
     nltk.data.find("corpora/stopwords")
 except LookupError:
     nltk.download("stopwords")
+
+try:
+    nltk.data.find("corpora/wordnet")
+except LookupError:
+    nltk.download("wordnet")
 
 # Set up logging for error tracking
 logging.basicConfig(level=logging.ERROR)
