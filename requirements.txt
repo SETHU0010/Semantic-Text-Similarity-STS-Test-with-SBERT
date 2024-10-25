@@ -1,0 +1,7 @@
+streamlit
+pandas
+sentence-transformers
+inflect
+nltk
+torch
+xlsxwriter
